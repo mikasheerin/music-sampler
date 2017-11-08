@@ -5,32 +5,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Magic City Hippies Music Sampler</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
 
+
   <h1>Magic City Hippies</h1>
 
-  <img src="images/MCH_large.jpg" alt="Magic City Hippies">
-  <p> <small>Image obtained from EPK sent by Robby Hunter.</small></p>
+<div class="heading">
+  <img id="headerimg" src="images/MCH_large.jpg" alt="Magic City Hippies">
+  <p id="caption"> <small><i>Image obtained from an EPK sent by Robby Hunter.</i></small></p>
+</div>
 
-  <p>The Magic City Hippies describe themselves as an "indie funk, dusted with a taste of hip-hop and baked in an oven of soul." Formally known as the Robby Hunter Band, these Miami natives became Spotify's most viral track in August of 2016 with "Fanfare" and show no signs of slowing down. Just this past year they have performed at globally and nationally recognized festivals like Bonnaroo and Suwanee Hulaween.</p>
+<div class="text">
+  <p>The Magic City Hippies describe their sound as "indie funk, dusted with a taste of hip-hop and baked in an oven of soul." Formally known as the Robby Hunter Band, these Miami natives held Spotify's most viral track in August of 2016 with "Fanfare"
+    and show no signs of slowing down. Just this past year they have performed at globally and nationally recognized festivals like Bonnaroo and Suwanee Hulaween.</p>
+</div>
 
-  <img src="images/Fanfare_thumb.jpg" alt="Fanfare by Magic City Hippies">
-  <img src="images/HeartWants_thumb.jpg" alt="Heart Wants by Magic City Hippies">
-  <img src="images/BRNT_thumb.jpg" alt="BRNT by Magic City Hippies">
-  <img src="images/HUSH_thumb.jpg" alt="HUSH by Magic City Hippies">
 
-  <audio id="soundtrack" controls preload="auto">
-    <source src="audio/Fanfare_cut.mp3" type="audio/mp3">
-    <source src="audio/Fanfare_cut.ogg" type="audio/ogg">
-    <source src="audio/HeartWants_cut.mp3" type="audio/mp3">
-    <source src="audio/HeartWants_cut.ogg" type="audio/ogg">
+  <img id="fanfare_img" class="albumart" src="images/Fanfare_thumb.jpg" alt="Fanfare by Magic City Hippies">
+
+  <img id="heartwants_img" class="albumart" src="images/HeartWants_thumb.jpg" alt="Heart Wants by Magic City Hippies">
+
+  <img id="BRNT_img" class="albumart" src="images/BRNT_thumb.jpg" alt="BRNT by Magic City Hippies">
+
+  <img id="HUSH_img" class="albumart" src="images/HUSH_thumb.jpg" alt="HUSH by Magic City Hippies">
+
+  <div id="audioplayer">
+    <div id="fanfare">
+      <audio controls preload="auto">
+        <source src="audio/Fanfare_cut.mp3" type="audio/mp3">
+        <source src="audio/Fanfare_cut.ogg" type="audio/ogg">
+      </audio>
+      <p>"Fanfare" by Magic City Hippies</p>
+    </div>
+
+    <div id="heartwants">
+      <audio controls preload="auto">
+        <source src="audio/HeartWants_cut.mp3" type="audio/mp3">
+        <source src="audio/HeartWants_cut.ogg" type="audio/ogg">
+      </audio>
+      <p>"Heart Wants" by Magic City Hippies</p>
+    </div>
+
+    <div id="BRNT">
+      <audio controls preload="auto">
     <source src="audio/BRNT_cut.mp3" type="audio/mp3">
     <source src="audio/BRNT_cut.ogg" type="audio/ogg">
+  </audio>
+      <p>"BRNT feat. The EMEFE Horns" by Magic City Hippies</p>
+    </div>
+
+    <div id="HUSH">
+      <audio controls preload="auto">
     <source src="audio/HUSH_cut.mp3" type="audio/mp3">
     <source src="audio/HUSH_cut.ogg" type="audio/ogg">
   </audio>
+      <p>"HUSH" by Magic City Hippies</p>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
