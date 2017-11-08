@@ -8,6 +8,9 @@ body {
   font-family: 'Hind Siliguri', Tahoma, sans-serif; /*   add fonts   */
 }
 
+#page {
+  padding: 5%;
+}
 .heading {
   padding-bottom: 5%;
   float: left;
@@ -49,7 +52,7 @@ h1, h2 {
   font-family: 'Hind Siliguri', Tahoma, sans-serif;
   margin:auto;
   text-align: center;
-  padding: 5%;
+  padding-bottom: 5%;
 }
 
 p {
@@ -74,54 +77,13 @@ img {
 }
 
 
-/* links */
-
-a {
-  color: #0287b3;
-}
-
-a:hover {
-  color: #3ecbfa;
-}
-
-/* special classes */
 
 
 /* put your media queries below */
 
 @media (max-width: 700px) {
 
-  #guitar-image-container {
-    max-width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    float: none;
-  }
 
-  #records-image-container {
-    max-width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    float: none;
-  }
-
-  #streaming-image-container {
-    max-width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    float: none;
-  }
-
-  #studio-image-container {
-    max-width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    float: none;
-  }
 
 
 }
