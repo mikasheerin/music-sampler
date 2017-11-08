@@ -9,10 +9,12 @@ body {
 }
 
 #page {
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
+
 .heading {
-  padding-bottom: 5%;
+  padding-bottom: 3%;
   float: left;
   box-sizing: border-box;
   width: 60%;
@@ -27,7 +29,6 @@ body {
 }
 
 .albumart {
-  max-width: 100%;
   padding-left: 5%;
   padding-bottom: 5%;
   float: left;
@@ -36,23 +37,20 @@ body {
 
 #fanfare_img {
   clear: both;
-  padding-left: 5%;
 }
 
 #audioplayer {
   max-width: 100%;
   float:left;
-  margin-left: 5%;
-  clear:both;
+  padding-left: 5%;
 }
 
 /* headings and text */
 
-h1, h2 {
+h1 {
   font-family: 'Hind Siliguri', Tahoma, sans-serif;
-  margin:auto;
   text-align: center;
-  padding-bottom: 5%;
+  margin: 5%;
 }
 
 p {
@@ -63,6 +61,7 @@ p {
   text-align: center;
   padding-bottom: 2%
 }
+
 /* images */
 
 img {
@@ -73,17 +72,34 @@ img {
 
 #headerimg {
   margin: auto;
-  width: 75%
+  width: 90%;
 }
-
-
-
 
 /* put your media queries below */
 
+@media (max-width: 900px) {
+
+  .heading {
+    padding-bottom: 0;
+    float: none;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .text {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 5%;
+  }
+
+}
+
 @media (max-width: 700px) {
 
-
-
+  #headerimg {
+    margin: auto;
+    width: 100%
+  }
 
 }
